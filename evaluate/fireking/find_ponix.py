@@ -1,5 +1,5 @@
-"""When Ponix in hand."""
-
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
+"""Functions related to get Ponix in hand."""
 from typing import List, Tuple
 
 
