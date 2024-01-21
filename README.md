@@ -34,6 +34,14 @@ shown and saved in `plots/fireking`. The plot looks like:
 
 ![alt text](./assets/result.png)
 
+In this case we see that adding other copies of
+[Original Sinful Spoils](https://yugipedia.com/wiki/Original_Sinful_Spoils_-_Snake-Eye)
+increases the probability to open a good hand regarding the fire king engine because
+Ponix is more likely to be in the hand. However it also decreases the probability to
+get handtraps because you may need to discard them to pay Original Sinful Spoils' cost.
+On the other hand, adding cards without removing ones also decreases the probability to open
+handtraps.
+
 ## Add your own deck
 
 Here are the steps to add your own deck analysis:
