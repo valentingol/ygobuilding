@@ -1,3 +1,4 @@
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
 """Matplotlib functions for plotting results."""
 import os
 from typing import Dict, List

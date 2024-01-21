@@ -1,3 +1,4 @@
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
 """Main entry point for the fireking evaluation."""
 from typing import List
 

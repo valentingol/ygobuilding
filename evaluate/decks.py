@@ -1,3 +1,4 @@
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
 """Functions for getting decks from a base deck and configs."""
 from typing import List, Tuple
 

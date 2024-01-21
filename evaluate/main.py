@@ -1,3 +1,4 @@
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
 """Main entry point for hand evaluation."""
 import os
 import random

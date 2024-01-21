@@ -1,3 +1,4 @@
+# Copyright (c) 2024 Valentin Goldite. All Rights Reserved.
 """Parser for command line arguments."""
 import argparse
 from typing import Tuple
