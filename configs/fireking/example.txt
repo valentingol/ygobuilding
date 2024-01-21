@@ -1,9 +1,16 @@
 ## Base deck
 # Evaluate the base deck
 
-## Config1
-+ fk_sanctuary
+## +1 OSS
++ original_sinful_spoils
+
+## +2 OSS
++ 2 original_sinful_spoils
+
+## +1 OSS -1 tenki
++ original_sinful_spoils
 - tenki
 
-## Config2
-+ fk_sanctuary
+## +2 OSS -1 tenki
++ 2 original_sinful_spoils
+- tenki
