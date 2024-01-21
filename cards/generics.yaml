@@ -23,6 +23,14 @@ droll:
   type: spellcaster
   specs: [freespot, handtrap]
 
+nibiru:
+  name: nibiru
+  kind: monster
+  level: 11
+  attribute: light
+  type: rock
+  specs: [freespot, handtrap]
+
 one_for_one:
   name: one_for_one
   kind: spell
