@@ -14,25 +14,19 @@ In a fresh virtual environment, run:
 pip install -e .
 ```
 
-## How to use (fire king deck example)
+## Demo (fire king deck example)
 
 Look at the `configs/base.yaml` file. It contains the list of cards in the fire king
 base deck. You can add or remove cards from this list and test multiple configs in a
 configuration file like `configs/fireking/example.txt`.
 
-The rules of configuration files are:
-
-* Start a new config with the line `## <config name>` (don't forget the space after `##`)
-* You can add additional comments with `#` (but not after `##`)
-* You can add cards with the line `+ <card name>` (don't forget the space after `+`)
-* You can remove cards with the line `- <card name>` (don't forget the space after `-`)
-
 The list of cards with their names are available in the `cards` folder.
 
-You can run the following command (`n` is the number of hands to evaluate, default is 100 000)
+You can run the following command (`n` is the number of hands to evaluate, default is 100 000,
+`c` is the number of cards in hand, default is 5)
 
 ```bash
-python evaluate/main.py --name=fireking --configs=configs/fireking/example.txt -n=10000
+python evaluate/main.py --name=fireking --configs=configs/fireking/example.txt -n=10000 -c=5
 ```
 
 It will output probabilities for each labels and plot will be
@@ -62,6 +56,13 @@ Add an entry in `configs/base.yaml` with the list of cards under the name `<arch
 You can create your configs to modify the base deck. See the example in
 `configs/fireking/example.txt`. All the cards you add should be in the card database
 either in `cards/generics.yaml` or in `cards/<archetype_name>.yaml`.
+
+The rules of configuration files are:
+
+* Start a new config with the line `## <config name>`
+* You can add additional comments with `#` (but not after `##`)
+* You can add cards with the line `+ <card name>`
+* You can remove cards with the line `- <card name>`
 
 You can put this file in `configs/<archetype_name>/<config_name>.txt`.
 
