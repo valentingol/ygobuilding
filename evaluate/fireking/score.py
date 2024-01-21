@@ -49,7 +49,7 @@ def score_hand(hand: List[dict], deck: List[dict]) -> List[str]:
             res, hand, hand_names, deck = case_one_for_one_hand(
                 res, hand, hand_names, deck
             )
-        elif "original_sinful_spoil" in hand_names:
+        elif "original_sinful_spoils" in hand_names:
             res, hand, hand_names, deck = case_oss_hand(res, hand, hand_names, deck)
 
     # Use Ponix NS before using Nadir Servant if possible
