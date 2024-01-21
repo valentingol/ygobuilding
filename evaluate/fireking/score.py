@@ -34,9 +34,14 @@ def score_hand(hand: List[dict], deck: List[dict]) -> List[str]:
     # Use Tenki if possible
     if "tenki" in hand_names:
         deck_names = [card["name"] for card in deck]
-        arvata = deck.pop(deck_names.index("arvata"))
-        hand.append(arvata)
-        hand_names.append("arvata")
+        if "arvata" in deck_names:
+            arvata = deck.pop(deck_names.index("arvata"))
+            hand.append(arvata)
+            hand_names.append("arvata")
+        elif "barong" in deck_names:
+            barong = deck.pop(deck_names.index("barong"))
+            hand.append(barong)
+            hand_names.append("barong")
 
     # Get Ponix with one for one or original sinful spoil
     if "ponix" not in hand_names:
