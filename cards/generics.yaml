@@ -1,0 +1,47 @@
+ash_blossom:
+  name: ash_bossom
+  kind: monster
+  level: 3
+  attribute: fire
+  type: zombie
+  specs: [freespot, handtrap, tuner]
+
+veiler:
+  name: veiler
+  kind: monster
+  level: 1
+  attribute: light
+  type: spellcaster
+  specs: [freespot, handtrap, tuner]
+
+droll:
+  name: droll
+  kind: monster
+  level: 1
+  attribute: wind
+  type: spellcaster
+  specs: [freespot, handtrap]
+
+one_for_one:
+  name: one_for_one
+  kind: spell
+  type: normal
+  specs: []
+
+called_by:
+  name: called_by
+  kind: spell
+  type: quick
+  specs: [freespot]
+
+triple_tactics:
+  name: triple_tactics
+  kind: trap
+  type: normal
+  specs: [freespot]
+
+imperm:
+  name: imperm
+  kind: trap
+  type: normal
+  specs: [handtrap, freespot]

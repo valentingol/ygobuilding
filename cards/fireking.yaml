@@ -1,0 +1,97 @@
+# Fire King base
+
+ponix:
+  name: ponix
+  kind: monster
+  level: 1
+  attribute: fire
+  type: winged_beast
+  specs: [fire_king]
+
+kirin:
+  name: kirin
+  kind: monster
+  level: 8
+  attribute: fire
+  type: beast
+  specs: [fire_king]
+
+garunix:
+  name: garunix
+  kind: monster
+  level: 8
+  attribute: fire
+  type: winged_beast
+  specs: [fire_king]
+
+arvata:
+  name: arvata
+  kind: monster
+  level: 4
+  attribute: fire
+  type: beast_warrior
+  specs: [fire_king]
+
+barong:
+  name: barong
+  kind: monster
+  level: 4
+  attribute: fire
+  type: beast_warrior
+  specs: [fire_king]
+
+fk_sanctuary:
+  name: sanctuary_fk
+  kind: spell
+  type: continuous
+  specs: [fire_king]
+
+fk_island:
+  name: fk_island
+  kind: spell
+  type: field
+  specs: [fire_king]
+
+sky_burn:
+  name: sky_burn
+  kind: spell
+  type: quick
+  specs: [fire_king]
+
+tenki:
+  name: tenki
+  kind: spell
+  type: continuous
+  specs: []
+
+# Dogmatika engine
+
+nadir_servant:
+  name: nadir_servant
+  kind: spell
+  type: normal
+  specs: []
+
+fleurdelis:
+  name: fleurdelis
+  kind: monster
+  level: 8
+  attribute: light
+  type: spellcaster
+  specs: [dogmatika]
+
+maximus:
+  name: maximus
+  kind: monster
+  level: 8
+  attribute: light
+  type: spellcaster
+  specs: [dogmatika]
+
+# Snake-eye engine
+
+original_sinful_spoils:
+  name: original_sinful_spoils
+  kind: spell
+  type: normal
+  specs: [snake-eye, sinful_spoils]

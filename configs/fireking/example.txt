@@ -1,0 +1,9 @@
+## Base deck
+# Evaluate the base deck
+
+## Config1
++ fk_sanctuary
+- tenki
+
+## Config2
++ fk_sanctuary

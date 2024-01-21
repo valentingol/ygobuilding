@@ -1,0 +1,21 @@
+# Results
+results
+
+# Configs except configs/base.yaml and configs/fireking/example.txt
+configs/*
+!configs/fireking
+!configs/base.yaml
+configs/fireking/*
+!configs/fireking/example.txt
+
+# Env
+venv
+env
+.env
+.venv
+**egg-info
+
+# Cache
+**/__pycache__
+**/.mypy_cache
+**.pyc
