@@ -11,14 +11,17 @@ from evaluate.plot import plot_save_results
 
 def main() -> None:
     """Draw multiple hands, evaluate them and return the results."""
-    deck_name, num_runs, configs_path = parse_args()
+    args = parse_args()
+    deck_name = args.name
+    num_runs = args.num_runs
+    num_cards = args.num_cards
     # Get order and score_hand function
     score_hand = __import__(
         f"evaluate.{deck_name}.score", fromlist=["score_hand"]
     ).score_hand
     order = __import__(f"evaluate.{deck_name}.score", fromlist=["ORDER"]).ORDER
 
-    decks, cfg_names = get_decks(base_deck=deck_name, configs_path=configs_path)
+    decks, cfg_names = get_decks(base_deck=deck_name, configs_path=args.configs)
     all_results = []
     for i, cfg_name in enumerate(cfg_names):
         print(f"{cfg_name}:")
@@ -27,7 +30,7 @@ def main() -> None:
         for seed in range(num_runs):
             # Shuffle the deck and draw a hand.
             deck = random.Random(seed).sample(original_deck, len(original_deck))
-            hand, deck = deck[:5], deck[5:]
+            hand, deck = deck[:num_cards], deck[num_cards:]
             label_list = score_hand(hand, deck)
             for label in label_list:
                 results[label] += 1.0 / num_runs
@@ -48,7 +51,7 @@ def main() -> None:
     )
     # Save configs in results folder
     os.makedirs(f"results/{deck_name}/configs", exist_ok=True)
-    os.system(f"cp {configs_path} results/{deck_name}/configs/{date_string}.txt")
+    os.system(f"cp {args.configs} results/{deck_name}/configs/{date_string}.txt")
 
 
 if __name__ == "__main__":
